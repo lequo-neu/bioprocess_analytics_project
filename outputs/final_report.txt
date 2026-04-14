@@ -1,0 +1,27 @@
+══════════════════════════════════════════════════════════════════════
+  BIOPROCESS ANALYTICS & PAT MODELING — FINAL REPORT
+  Generated: 2026-04-14 18:25:14
+══════════════════════════════════════════════════════════════════════
+
+── DATA QUALITY ──────────────────────────────────────────────────────
+  Analytics-ready rows : 52,000
+  Batches              : 20
+  Remaining null %     : 0.0000%
+  Anomalous batches    : 8
+
+── MODEL PERFORMANCE ─────────────────────────────────────────────────
+  [RandomForest]  R²=0.9612  RMSE=1.4156  MAE=1.0114  CV-R²=0.9609
+  [Ridge]  R²=0.9251  RMSE=1.9663  MAE=1.5088  CV-R²=0.9251
+
+── PLS CHEMOMETRICS ──────────────────────────────────────────────────
+  Glucose (mM): R²=0.9979  RMSE=0.3154
+  Glutamine (mM): R²=0.9962  RMSE=0.0684
+  Lactate (mM): R²=0.9964  RMSE=0.4205
+
+── KEY INSIGHTS ──────────────────────────────────────────────────────
+  • Biocapacitance is the dominant predictor of VCD across all batches.
+  • PLS models achieve high accuracy for all three metabolite targets.
+  • K-Means identified 3 distinct process trajectories.
+  • 8 batches flagged for quality review.
+  • Figures saved to: /Users/kevin/Documents/GitHub/Python/Handson_Collection/bioprocess_analytics_project/outputs/figures
+══════════════════════════════════════════════════════════════════════
