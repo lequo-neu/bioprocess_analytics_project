@@ -317,29 +317,3 @@ jupyterlab
 **Why clustering matters in manufacturing:** Even when all batches follow the same protocol, biological processes are variable. Clustering lets you find which batches deviated without needing to know in advance what a deviation looks like. Flagging 8 of 20 batches for review is not a failure — it is the pipeline doing its job.
 
 ---
-
-## Commit to GitHub
-
-After verifying the run completes without errors:
-
-```bash
-cd /Users/kevin/Documents/GitHub/Python/Handson_Collection
-
-git add bioprocess_analytics_project/
-
-git status   # confirm only project files are staged
-
-git commit -m "feat: add Bioprocess Analytics and PAT Modeling project
-
-- Simulates 52,000 rows of bioreactor process data across 20 batches
-- 3-stage ETL pipeline stored in SQLite with full traceability log
-- EDA: correlation heatmap, distributions, time-series plots
-- Random Forest (R2=0.96) and Ridge Regression (R2=0.93) for VCD prediction
-- PLS chemometrics on simulated Raman spectra (R2 > 0.996 for all analytes)
-- K-Means clustering identifies 3 process trajectories, flags 8 anomalous batches
-- macOS M1 compatible, no version-pinned dependencies"
-
-git push origin main
-```
-
-The outputs/ directory is listed in .gitignore and will not be committed. Generated figures and database files stay local only.
